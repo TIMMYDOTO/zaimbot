@@ -1,0 +1,6 @@
+framework module Pods_ZaimBot {
+  umbrella header "Pods-ZaimBot-umbrella.h"
+
+  export *
+  module * { export * }
+}

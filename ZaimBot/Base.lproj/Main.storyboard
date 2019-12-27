@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aBp-tn-0bz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Займ Бот-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZaimBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Напишите сообщение" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ocy-sQ-rx7">
+                                <rect key="frame" x="0.0" y="807" width="414" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="hYC-8c-7OA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GYQ-nA-uQA">
+                                <rect key="frame" x="0.0" y="88" width="414" height="711"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="143" id="e36-oW-WB2" customClass="TableViewCell" customModule="ZaimBot" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="143"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e36-oW-WB2" id="9AL-zl-Cp2">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="143"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="d8h-sa-ufR">
+                                                    <rect key="frame" x="10" y="10" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="p3b-3T-c1S"/>
+                                                        <constraint firstAttribute="width" constant="30" id="xel-S7-n10"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ЗаймБот" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wkb-s3-gEv">
+                                                    <rect key="frame" x="50" y="9" width="55" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="16" id="3qe-il-2Ds"/>
+                                                        <constraint firstAttribute="width" constant="55" id="hxs-j6-o5w"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g3v-fP-Fqe">
+                                                    <rect key="frame" x="30" y="45" width="374" height="68"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msP-0E-HWu" customClass="ActiveLabel" customModule="ActiveLabel">
+                                                            <rect key="frame" x="10" y="10" width="354" height="48"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Xe6-gX-Wiu"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="msP-0E-HWu" firstAttribute="top" secondItem="g3v-fP-Fqe" secondAttribute="top" constant="10" id="9WG-cj-rif"/>
+                                                        <constraint firstAttribute="bottom" secondItem="msP-0E-HWu" secondAttribute="bottom" constant="10" id="hw9-Ea-fXB"/>
+                                                        <constraint firstItem="msP-0E-HWu" firstAttribute="leading" secondItem="g3v-fP-Fqe" secondAttribute="leading" constant="10" id="i7g-Me-ojb"/>
+                                                        <constraint firstAttribute="trailing" secondItem="msP-0E-HWu" secondAttribute="trailing" constant="10" id="nkf-cF-bc5"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="https://go.leadgid.ru/aff_c?offer_id=1658&amp;aff_id=58757" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0m-pA-JOE" customClass="ActiveLabel" customModule="ActiveLabel">
+                                                    <rect key="frame" x="16" y="46" width="381" height="36"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="d8h-sa-ufR" firstAttribute="top" secondItem="9AL-zl-Cp2" secondAttribute="top" constant="10" id="4Fs-yz-hzf"/>
+                                                <constraint firstAttribute="bottom" secondItem="g3v-fP-Fqe" secondAttribute="bottom" constant="30" id="ERP-E3-Mjv"/>
+                                                <constraint firstItem="g3v-fP-Fqe" firstAttribute="top" secondItem="Wkb-s3-gEv" secondAttribute="bottom" constant="20" id="GHv-MV-ttW"/>
+                                                <constraint firstAttribute="trailing" secondItem="g3v-fP-Fqe" secondAttribute="trailing" constant="10" id="Kcy-X2-KoW"/>
+                                                <constraint firstItem="d8h-sa-ufR" firstAttribute="leading" secondItem="9AL-zl-Cp2" secondAttribute="leading" constant="10" id="Mh8-Qq-vLF"/>
+                                                <constraint firstItem="Wkb-s3-gEv" firstAttribute="top" secondItem="9AL-zl-Cp2" secondAttribute="top" constant="9" id="RMG-zJ-Paw"/>
+                                                <constraint firstItem="Wkb-s3-gEv" firstAttribute="leading" secondItem="d8h-sa-ufR" secondAttribute="trailing" constant="10" id="eM0-Yz-CNG"/>
+                                                <constraint firstItem="g3v-fP-Fqe" firstAttribute="leading" secondItem="9AL-zl-Cp2" secondAttribute="leading" constant="30" id="t2o-Bq-iU9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="imgView" destination="d8h-sa-ufR" id="p8L-0a-qaJ"/>
+                                            <outlet property="msgLabel" destination="msP-0E-HWu" id="had-zT-d5A"/>
+                                            <outlet property="testLabel" destination="e0m-pA-JOE" id="AcV-l1-auB"/>
+                                            <outlet property="titleLabel" destination="Wkb-s3-gEv" id="2rD-Yv-pBe"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="answerCell" rowHeight="40" id="zeX-0c-P6V" customClass="AnswerCell" customModule="ZaimBot" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="171" width="414" height="40"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zeX-0c-P6V" id="Eni-oJ-Ytb">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eow-Ej-X4Y">
+                                                    <rect key="frame" x="342" y="5" width="62" height="30"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aM5-Ol-awM">
+                                                            <rect key="frame" x="10" y="10" width="42" height="10"/>
+                                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.1764705882" green="0.65098039220000004" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstItem="aM5-Ol-awM" firstAttribute="leading" secondItem="eow-Ej-X4Y" secondAttribute="leading" constant="10" id="G8G-Re-nwU"/>
+                                                        <constraint firstAttribute="trailing" secondItem="aM5-Ol-awM" secondAttribute="trailing" constant="10" id="LGE-h4-mVa"/>
+                                                        <constraint firstAttribute="bottom" secondItem="aM5-Ol-awM" secondAttribute="bottom" constant="10" id="pAQ-2T-YkM"/>
+                                                        <constraint firstItem="aM5-Ol-awM" firstAttribute="top" secondItem="eow-Ej-X4Y" secondAttribute="top" constant="10" id="s1f-DJ-d4g"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="eow-Ej-X4Y" secondAttribute="bottom" constant="5" id="QTB-DC-ZfK"/>
+                                                <constraint firstItem="eow-Ej-X4Y" firstAttribute="top" secondItem="Eni-oJ-Ytb" secondAttribute="top" constant="5" id="Qy3-lD-2z7"/>
+                                                <constraint firstAttribute="trailing" secondItem="eow-Ej-X4Y" secondAttribute="trailing" constant="10" id="XHy-uQ-49k"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="answerLabel" destination="aM5-Ol-awM" id="7Ug-qF-h5l"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="QhV-9I-gO2"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Itj-e1-cwB"/>
+                                </connections>
+                            </tableView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iw-jk-FBZ">
+                                <rect key="frame" x="372" y="818" width="32" height="32"/>
+                                <state key="normal" backgroundImage="send"/>
+                                <connections>
+                                    <action selector="didTapSend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zd4-qn-Swz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ocy-sQ-rx7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4ed-lx-1kK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9iw-jk-FBZ" secondAttribute="bottom" constant="12" id="70M-U7-M8N"/>
+                            <constraint firstItem="Ocy-sQ-rx7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="C6p-KG-DlB"/>
+                            <constraint firstItem="Ocy-sQ-rx7" firstAttribute="top" secondItem="GYQ-nA-uQA" secondAttribute="bottom" constant="8" id="VJ7-Db-CH0"/>
+                            <constraint firstItem="GYQ-nA-uQA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="be9-bN-vAi"/>
+                            <constraint firstItem="Ocy-sQ-rx7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fHN-La-aVz"/>
+                            <constraint firstItem="9iw-jk-FBZ" firstAttribute="top" secondItem="GYQ-nA-uQA" secondAttribute="bottom" constant="19" id="m3z-i8-ptq"/>
+                            <constraint firstItem="GYQ-nA-uQA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mzu-Bb-hNk"/>
+                            <constraint firstItem="GYQ-nA-uQA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="us5-ij-aIC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9iw-jk-FBZ" secondAttribute="trailing" constant="10" id="yzw-Kv-c5I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Займ Бот" id="RpJ-dF-7lS"/>
+                    <size key="freeformSize" width="414" height="896"/>
+                    <connections>
+                        <outlet property="messageTextField" destination="Ocy-sQ-rx7" id="mvd-3q-pZs"/>
+                        <outlet property="sendButton" destination="9iw-jk-FBZ" id="yo6-DJ-uWC"/>
+                        <outlet property="tableView" destination="GYQ-nA-uQA" id="0Im-yn-EuX"/>
+                        <outlet property="tableViewY" destination="mzu-Bb-hNk" id="nmX-Le-4JT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1018.840579710145" y="135.9375"/>
+        </scene>
+        <!--Condition Controller-->
+        <scene sceneID="txa-gF-jO2">
+            <objects>
+                <viewController storyboardIdentifier="ConditionController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hvX-2K-37L" customClass="ConditionController" customModule="ZaimBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gUt-Ix-a6c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="2250"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MwC-cK-Y91">
+                                <rect key="frame" x="16" y="60" width="382" height="2136"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Условия пользования и погашения ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> Информация о займах  Условия пользования и погашения 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Требования к заёмщикам:">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> • Гражданство РФ  • Возраст от 18 лет  • Любая кредитная история 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Условия получения:">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> 
+ • Первый заём до 10 000 рублей выдается по ставке 0% в случае своевременного погашения;
+ • Период погашения займа от 8 до 52 недель;
+Минимальный срок погашения займа: 61 день;
+Максимальный срок погашения займа: 365 дней;
+ • Процентная ставка по займам от 0 до 36% годовых. Например, если Вы взяли займ на сумму 10 000 рублей на 1 год, то после истечения срока займа, Вам необходимо будет выплатить: от 10 000 до 13 600 рублей.
+ • В случае нарушения сроков, размер неустойки составляет 0,10% от суммы просрочки в день, но не более 10% от суммы кредита;
+ • В случае длительной задержки выплаты информация будет передана в БКИ.
+ • Продление займа возможно при своевременном информировании кредитора (до наступления даты возврата займа) и уплаты процентов за первичный срок займа. Дополнительных комиссий за продление займа не предусмотрено. 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Последствия невыплаты займа:">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> 
+В случае невозвращения в условленный срок суммы займа или суммы процентов за пользование заёмными средствами кредитор вынуждено начислит штраф за просрочку платежа. Большинство кредиторов идут на уступки и дают 3 дополнительных рабочих дня для оплаты. Они предусмотрены на случай, к примеру, если банковский перевод занял больше времени, чем обычно. Однако, в случае неполучения от Вас какой-либо реакции в течение продолжительного времени, будет начислен штраф за просрочку срока погашения размером в среднем 0,10% от первоначальной суммы для займов. При несоблюдении Вами условий по погашению займов, данные о Вас могут быть переданы в реестр должников или БКИ, что негативно может сказаться на Вашей кредитной истории и рейтинге кредитоспособности. Задолженность может быть передана коллекторскому агентству для взыскания займа. При допуске просрочки продление займа невозможно.
+О всех приближающихся сроках платежа кредитор своевременно информирует Вас по СМС или электронной почте. Рекомендуем Вам вносить платеж в день получения данных напоминаний. Погашая задолженность в срок, Вы формируете хорошую кредитную историю, что повышает Ваш рейтинг кредитоспособности и шансы в дальнейшем получить займ на более выгодных условиях.
+Предложение не является оффертой. Конечные условия уточняйте при прямом общении с кредиторами.
+Информация о полной стоимости займа и пример расчета в неделях:
+Займ в размере 10 000 рублей выдан на 8 недель с пролонгацией. В году 365 дней, 0.56% в неделю (годовая ставка, соответственно будет равна 29.2%). Сумма процентов за год составляет 2 920 руб. (10 000*29.2% = 12 920), за 1 неделю 56 руб. (2920/52 = 56), за 8 недель соответственно 448 руб. (8*56 = 448). Общая сумма платежа составляет 10 488 руб. (10 000 руб. основной долг + 488 руб. проценты).
+ПСЗ (полная стоимость займа) в процентах составляет 29.2% годовых.
+Минимальный и максимальный период погашения займа составляет от 65 дней, до 365 дней.
+Максимальная годовая процентная ставка, включающая ссудный процент, а также все остальные комиссии и расходы за год, или аналогичная ставка, рассчитанная соответственно местному законодательству, составляет 36% годовых.
+Взыскание долгов осуществляется посредством телефонных звонков, уведомлений по SMS и электронной почте, как Заемщика, так и контактного лица.
+Минимальный и максимальный период погашения займа составляет от 65 дней/8 недель, до 365 дней/ 52 недель.
+В случае просрочки по выплатам, со следующего дня после истечения срока займа, Вам будет ежедневно начисляться пеня в размере 0,05 – 1% в день от суммы кредита. Также будет продолжаться ежедневное начисление процентов за пользование займом по договору и возможно начисление фиксированной комиссии. 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Информация о МКК и МФО, представленных на сайте:">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> 
+ • МетроКредит ООО “МКК Метрокредит”
+ • Лицензия ЦБ РФ: 651403581005811
+ • Адрес: 350063, г. Краснодар, Кубанская набережная, д. 33
+ • Екапуста ООО МКК «Русинтерфинанс»
+ • Лицензия ЦБ РФ: 2120754001243
+
+• Адрес: 630055, Новосибирская область, г. Новосибирск, ул. Гнесиных, д. 10/1, оф. 202
+ • ЗАЙМЕР ООО МФК «Займер»
+ • Лицензия ЦБ РФ: 651303532004088
+ • Адрес: 630099, Новосибирская область, г. Новосибирск, ул. Октябрьская Магистраль, д. 3, оф. 906
+ • Moneza ООО МКК «МАКРО»
+ • Лицензия ЦБ РФ: 001603045007582
+ • Адрес: 115114, г. Москва, ул. Летниковская, д. 10, стр. 4, пом. I, комн. 15
+ • Money Man ООО МФК “Мани Мен”
+ • Лицензия ЦБ РФ: 2110177000478
+ • Адрес: 121096, г. Москва, ул. Василисы Кожиной, д. 1, оф. Д13
+ • Турбозайм МФК Турбозайм (ООО)
+ • Лицензия ЦБ РФ: 651303045003951
+ • Адрес: 123290, г. Москва, туп. 1-й Магистральный, д. 11, стр. 10
+ • WEBBANKIR ООО МФК «ВЭББАНКИР»
+ • Лицензия ЦБ РФ: 2120177002077
+ • Адрес: 125466, г. Москва, ул. Соколово-Мещерская, д. 29, оф. 308
+ • Credit Plus ООО МФК «Экофинанс»
+ • Лицензия ЦБ РФ: 65150304500645
+ • Адрес: 127051, г. Москва, ул. Садовая-Самотёчная, д. 24/27, эт. 4
+ • E zaem ООО МФК «Веритас»
+ • Лицензия ЦБ РФ: 651303045003161
+ • Адрес: 115114, г. Москва, ул. Летниковская, д. 10, стр. 4, эт. 2, пом. I Ч, комн. 15 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="*Заём возможно продлить неограниченное количество раз в случае своевременной уплаты процентов.">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="user" size="13"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="   ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="rect" keyPath="textContainerInset">
+                                        <rect key="value" x="30" y="15" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GrL-ZK-DVQ" userLabel="line">
+                                <rect key="frame" x="16" y="2195" width="382" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.075422731164383555" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="E2x-fJ-ccf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rkh-Ld-GzY" firstAttribute="bottom" secondItem="MwC-cK-Y91" secondAttribute="bottom" constant="20" id="3A1-Bi-PM6"/>
+                            <constraint firstItem="MwC-cK-Y91" firstAttribute="top" secondItem="Rkh-Ld-GzY" secondAttribute="top" constant="16" id="LQS-eg-qla"/>
+                            <constraint firstItem="MwC-cK-Y91" firstAttribute="leading" secondItem="Rkh-Ld-GzY" secondAttribute="leading" constant="16" id="M5W-kT-mZJ"/>
+                            <constraint firstItem="MwC-cK-Y91" firstAttribute="trailing" secondItem="Rkh-Ld-GzY" secondAttribute="trailing" constant="-16" id="Yxh-Kg-FDG"/>
+                            <constraint firstItem="GrL-ZK-DVQ" firstAttribute="leading" secondItem="gUt-Ix-a6c" secondAttribute="leading" constant="16" id="au1-p1-hBH"/>
+                            <constraint firstItem="GrL-ZK-DVQ" firstAttribute="top" secondItem="MwC-cK-Y91" secondAttribute="bottom" constant="-1" id="z3j-Ce-Z5N"/>
+                            <constraint firstAttribute="trailing" secondItem="GrL-ZK-DVQ" secondAttribute="trailing" constant="16" id="zxO-Q6-cNj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rkh-Ld-GzY"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="2250"/>
+                    <connections>
+                        <outlet property="textView" destination="MwC-cK-Y91" id="26W-cI-HTa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1TR-sx-7Db" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1857.9710144927537" y="184.82142857142856"/>
+        </scene>
+        <!--LableVC-->
+        <scene sceneID="b44-Md-eDo">
+            <objects>
+                <viewController id="sgR-df-qzc" customClass="LableVC" customModule="ZaimBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q95-VT-8xk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NL4-85-Kgf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="103" id="X2T-Nv-IZU" customClass="TestCell" customModule="ZaimBot" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="103"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X2T-Nv-IZU" id="Zeg-0t-jZF">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="103"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTn-FO-sME">
+                                                    <rect key="frame" x="8" y="21" width="399" height="61.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yqx-9e-bX0" customClass="ActiveLabel" customModule="ActiveLabel">
+                                                            <rect key="frame" x="20" y="20" width="359" height="21.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21.5" id="164-EJ-DUv"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="Yqx-9e-bX0" secondAttribute="trailing" constant="20" id="BOx-o2-7i9"/>
+                                                        <constraint firstItem="Yqx-9e-bX0" firstAttribute="leading" secondItem="ZTn-FO-sME" secondAttribute="leading" constant="20" id="eDL-Kz-oVX"/>
+                                                        <constraint firstItem="Yqx-9e-bX0" firstAttribute="top" secondItem="ZTn-FO-sME" secondAttribute="top" constant="20" id="gAt-mw-AP0"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Yqx-9e-bX0" secondAttribute="bottom" constant="20" id="uxl-Rh-Elx"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="ZTn-FO-sME" secondAttribute="trailing" constant="7" id="25G-wh-jjV"/>
+                                                <constraint firstAttribute="bottom" secondItem="ZTn-FO-sME" secondAttribute="bottom" constant="20.5" id="FyT-p5-hCV"/>
+                                                <constraint firstItem="ZTn-FO-sME" firstAttribute="top" secondItem="Zeg-0t-jZF" secondAttribute="top" constant="21" id="aHh-GZ-RZR"/>
+                                                <constraint firstItem="ZTn-FO-sME" firstAttribute="leading" secondItem="Zeg-0t-jZF" secondAttribute="leading" constant="8" id="bup-Wm-BrB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="activeLabel" destination="Yqx-9e-bX0" id="QP5-iZ-lzn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="sgR-df-qzc" id="E1n-CQ-DYk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lH4-ZY-zc3" firstAttribute="bottom" secondItem="NL4-85-Kgf" secondAttribute="bottom" id="1nZ-uy-Acw"/>
+                            <constraint firstItem="NL4-85-Kgf" firstAttribute="leading" secondItem="lH4-ZY-zc3" secondAttribute="leading" id="J3a-83-PxX"/>
+                            <constraint firstItem="NL4-85-Kgf" firstAttribute="top" secondItem="lH4-ZY-zc3" secondAttribute="top" id="fNf-Or-Ytx"/>
+                            <constraint firstItem="lH4-ZY-zc3" firstAttribute="trailing" secondItem="NL4-85-Kgf" secondAttribute="trailing" id="lNt-U7-XpA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lH4-ZY-zc3"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="NL4-85-Kgf" id="vfP-xI-rrD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D4r-XI-1wg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-765.21739130434787" y="246.42857142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="l15-vO-Xt6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aBp-tn-0bz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="naR-90-4ah">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1764705882352941" green="0.65098039215686276" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dvc-SU-bxj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9sd-h2-UMK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon" width="512" height="512"/>
+        <image name="send" width="32" height="32"/>
+    </resources>
+</document>
