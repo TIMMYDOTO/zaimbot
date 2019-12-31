@@ -15,8 +15,8 @@ class LableVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
-        dismissKeyboard()
+    hideKeyboardWhenTappedAround()
+//        dismissKeyboard()
         
         }
     
@@ -51,7 +51,7 @@ extension LableVC: UITableViewDataSource {
 extension LableVC {
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-
+        tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
     

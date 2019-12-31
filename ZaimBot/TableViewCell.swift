@@ -19,6 +19,7 @@ class TableViewCell: UITableViewCell {
     
     @IBOutlet weak var msgLabel: ActiveLabel!
     @IBOutlet weak var testLabel: ActiveLabel!
+    @IBOutlet weak var strethcingView: UIView!
     
     
     override func awakeFromNib() {
