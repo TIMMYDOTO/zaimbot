@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "EA2B316E-3EF0-4C31-A734-765A63F05759"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EFB05ACC-E377-4FFD-AB4A-97E8475547E8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZaimBot/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "EFB05ACC-E377-4FFD-AB4A-97E8475547E8 - 666996f5b59201f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZaimBot.ViewController.updateDataSource() -&gt; ()"
+                  moduleName = "ZaimBot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artyomschiopu/Downloads/zaimbot-master/ZaimBot/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "EFB05ACC-E377-4FFD-AB4A-97E8475547E8 - 666996f5b59201f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZaimBot.ViewController.updateDataSource() -&gt; ()"
+                  moduleName = "ZaimBot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artyomschiopu/Downloads/zaimbot-master/ZaimBot/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "EFB05ACC-E377-4FFD-AB4A-97E8475547E8 - 666996f5b59201f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZaimBot.ViewController.updateDataSource() -&gt; ()"
+                  moduleName = "ZaimBot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artyomschiopu/Downloads/zaimbot-master/ZaimBot/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "472">
+               </Location>
+               <Location
+                  uuid = "EFB05ACC-E377-4FFD-AB4A-97E8475547E8 - 666996f5b59201f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZaimBot.ViewController.updateDataSource() -&gt; ()"
+                  moduleName = "ZaimBot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artyomschiopu/Downloads/zaimbot-master/ZaimBot/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "824">
+               </Location>
+               <Location
+                  uuid = "EFB05ACC-E377-4FFD-AB4A-97E8475547E8 - 666996f5b59201f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZaimBot.ViewController.updateDataSource() -&gt; ()"
+                  moduleName = "ZaimBot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artyomschiopu/Downloads/zaimbot-master/ZaimBot/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "3472">
+               </Location>
+               <Location
+                  uuid = "EFB05ACC-E377-4FFD-AB4A-97E8475547E8 - 666996f5b59201f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZaimBot.ViewController.updateDataSource() -&gt; ()"
+                  moduleName = "ZaimBot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artyomschiopu/Downloads/zaimbot-master/ZaimBot/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "3824">
+               </Location>
+               <Location
+                  uuid = "EFB05ACC-E377-4FFD-AB4A-97E8475547E8 - 666996f5b59201f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZaimBot.ViewController.updateDataSource() -&gt; ()"
+                  moduleName = "ZaimBot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artyomschiopu/Downloads/zaimbot-master/ZaimBot/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "4008">
+               </Location>
+               <Location
+                  uuid = "EFB05ACC-E377-4FFD-AB4A-97E8475547E8 - 666996f5b59201f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZaimBot.ViewController.updateDataSource() -&gt; ()"
+                  moduleName = "ZaimBot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artyomschiopu/Downloads/zaimbot-master/ZaimBot/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "4192">
+               </Location>
+               <Location
+                  uuid = "EFB05ACC-E377-4FFD-AB4A-97E8475547E8 - 666996f5b59201f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZaimBot.ViewController.updateDataSource() -&gt; ()"
+                  moduleName = "ZaimBot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artyomschiopu/Downloads/zaimbot-master/ZaimBot/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "4376">
+               </Location>
+               <Location
+                  uuid = "EFB05ACC-E377-4FFD-AB4A-97E8475547E8 - 666996f5b59201f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZaimBot.ViewController.updateDataSource() -&gt; ()"
+                  moduleName = "ZaimBot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artyomschiopu/Downloads/zaimbot-master/ZaimBot/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "4996">
+               </Location>
+               <Location
+                  uuid = "EFB05ACC-E377-4FFD-AB4A-97E8475547E8 - 666996f5b59201f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZaimBot.ViewController.updateDataSource() -&gt; ()"
+                  moduleName = "ZaimBot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artyomschiopu/Downloads/zaimbot-master/ZaimBot/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "5180">
+               </Location>
+               <Location
+                  uuid = "EFB05ACC-E377-4FFD-AB4A-97E8475547E8 - 666996f5b59201f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZaimBot.ViewController.updateDataSource() -&gt; ()"
+                  moduleName = "ZaimBot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artyomschiopu/Downloads/zaimbot-master/ZaimBot/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "5364">
+               </Location>
+               <Location
+                  uuid = "EFB05ACC-E377-4FFD-AB4A-97E8475547E8 - 666996f5b59201f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZaimBot.ViewController.updateDataSource() -&gt; ()"
+                  moduleName = "ZaimBot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artyomschiopu/Downloads/zaimbot-master/ZaimBot/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "5548">
+               </Location>
+               <Location
+                  uuid = "EFB05ACC-E377-4FFD-AB4A-97E8475547E8 - 666996f5b59201f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZaimBot.ViewController.updateDataSource() -&gt; ()"
+                  moduleName = "ZaimBot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artyomschiopu/Downloads/zaimbot-master/ZaimBot/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "5732">
+               </Location>
+               <Location
+                  uuid = "EFB05ACC-E377-4FFD-AB4A-97E8475547E8 - 666996f5b59201f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZaimBot.ViewController.updateDataSource() -&gt; ()"
+                  moduleName = "ZaimBot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artyomschiopu/Downloads/zaimbot-master/ZaimBot/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "5916">
+               </Location>
+               <Location
+                  uuid = "EFB05ACC-E377-4FFD-AB4A-97E8475547E8 - 666996f5b59201f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZaimBot.ViewController.updateDataSource() -&gt; ()"
+                  moduleName = "ZaimBot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artyomschiopu/Downloads/zaimbot-master/ZaimBot/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "6100">
+               </Location>
+               <Location
+                  uuid = "EFB05ACC-E377-4FFD-AB4A-97E8475547E8 - 666996f5b59201f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZaimBot.ViewController.updateDataSource() -&gt; ()"
+                  moduleName = "ZaimBot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artyomschiopu/Downloads/zaimbot-master/ZaimBot/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "6284">
+               </Location>
+               <Location
+                  uuid = "EFB05ACC-E377-4FFD-AB4A-97E8475547E8 - 666996f5b59201f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ZaimBot.ViewController.updateDataSource() -&gt; ()"
+                  moduleName = "ZaimBot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artyomschiopu/Downloads/zaimbot-master/ZaimBot/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "6468">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
